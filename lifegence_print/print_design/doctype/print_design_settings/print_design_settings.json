@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "creation": "2026-03-08 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "defaults_section",
+  "default_paper_format",
+  "default_orientation",
+  "cb_defaults",
+  "enable_company_stamp",
+  "enable_qr_code",
+  "margins_section",
+  "default_margin_top",
+  "default_margin_bottom",
+  "cb_margins",
+  "default_margin_left",
+  "default_margin_right"
+ ],
+ "fields": [
+  {
+   "fieldname": "defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "default_paper_format",
+   "fieldtype": "Link",
+   "label": "Default Paper Format",
+   "options": "Paper Format JP"
+  },
+  {
+   "default": "Portrait",
+   "fieldname": "default_orientation",
+   "fieldtype": "Select",
+   "label": "Default Orientation",
+   "options": "Portrait\nLandscape"
+  },
+  {
+   "fieldname": "cb_defaults",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_company_stamp",
+   "fieldtype": "Check",
+   "label": "Enable Company Stamp"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_qr_code",
+   "fieldtype": "Check",
+   "label": "Enable QR Code"
+  },
+  {
+   "fieldname": "margins_section",
+   "fieldtype": "Section Break",
+   "label": "Margins (mm)"
+  },
+  {
+   "default": "10",
+   "fieldname": "default_margin_top",
+   "fieldtype": "Int",
+   "label": "Default Margin Top"
+  },
+  {
+   "default": "10",
+   "fieldname": "default_margin_bottom",
+   "fieldtype": "Int",
+   "label": "Default Margin Bottom"
+  },
+  {
+   "fieldname": "cb_margins",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "15",
+   "fieldname": "default_margin_left",
+   "fieldtype": "Int",
+   "label": "Default Margin Left"
+  },
+  {
+   "default": "15",
+   "fieldname": "default_margin_right",
+   "fieldtype": "Int",
+   "label": "Default Margin Right"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-08 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Print Design",
+ "name": "Print Design Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Print Designer",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

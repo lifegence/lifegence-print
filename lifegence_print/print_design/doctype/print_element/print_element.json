@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "creation": "2026-03-08 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "element_type",
+  "label",
+  "cb_element",
+  "field_name",
+  "static_value",
+  "position_section",
+  "pos_x",
+  "pos_y",
+  "cb_position",
+  "width",
+  "height",
+  "style_section",
+  "font_size",
+  "font_weight",
+  "text_align"
+ ],
+ "fields": [
+  {
+   "fieldname": "element_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Element Type",
+   "options": "Text\nField\nImage\nTable\nBarcode\nQR Code\nLine\nRectangle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "cb_element",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "DocType field for data binding",
+   "fieldname": "field_name",
+   "fieldtype": "Data",
+   "label": "Field Name"
+  },
+  {
+   "fieldname": "static_value",
+   "fieldtype": "Small Text",
+   "label": "Static Value"
+  },
+  {
+   "fieldname": "position_section",
+   "fieldtype": "Section Break",
+   "label": "Position (mm)"
+  },
+  {
+   "default": "0",
+   "fieldname": "pos_x",
+   "fieldtype": "Float",
+   "label": "Pos X"
+  },
+  {
+   "default": "0",
+   "fieldname": "pos_y",
+   "fieldtype": "Float",
+   "label": "Pos Y"
+  },
+  {
+   "fieldname": "cb_position",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "50",
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "default": "10",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "style_section",
+   "fieldtype": "Section Break",
+   "label": "Style"
+  },
+  {
+   "default": "10",
+   "fieldname": "font_size",
+   "fieldtype": "Int",
+   "label": "Font Size"
+  },
+  {
+   "default": "Normal",
+   "fieldname": "font_weight",
+   "fieldtype": "Select",
+   "label": "Font Weight",
+   "options": "Normal\nBold"
+  },
+  {
+   "default": "Left",
+   "fieldname": "text_align",
+   "fieldtype": "Select",
+   "label": "Text Align",
+   "options": "Left\nCenter\nRight"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-08 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Print Design",
+ "name": "Print Element",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

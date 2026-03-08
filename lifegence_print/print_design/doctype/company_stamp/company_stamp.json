@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "format:STAMP-{####}",
+ "creation": "2026-03-08 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "stamp_section",
+  "stamp_name",
+  "stamp_type",
+  "cb_stamp",
+  "company",
+  "stamp_image",
+  "size_section",
+  "stamp_width_mm",
+  "stamp_height_mm"
+ ],
+ "fields": [
+  {
+   "fieldname": "stamp_section",
+   "fieldtype": "Section Break",
+   "label": "Stamp"
+  },
+  {
+   "fieldname": "stamp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stamp Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stamp_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stamp Type",
+   "options": "\u4ee3\u8868\u5370\n\u89d2\u5370\n\u9280\u884c\u5370\n\u305d\u306e\u4ed6",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_stamp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stamp_image",
+   "fieldtype": "Attach Image",
+   "label": "Stamp Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size_section",
+   "fieldtype": "Section Break",
+   "label": "Size"
+  },
+  {
+   "default": "20",
+   "fieldname": "stamp_width_mm",
+   "fieldtype": "Int",
+   "label": "Stamp Width (mm)"
+  },
+  {
+   "default": "20",
+   "fieldname": "stamp_height_mm",
+   "fieldtype": "Int",
+   "label": "Stamp Height (mm)"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-08 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Print Design",
+ "name": "Company Stamp",
+ "naming_rule": "Expression (new)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Print Designer",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "stamp_name"
+}
